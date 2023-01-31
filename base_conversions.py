@@ -112,7 +112,7 @@ def decimal_to_base_n(decimal_str: str, base: int) -> str:
 ##################################################################################
 
 
-def BaseToBase(num_str: str, base_m: int, base_n: int) -> str:
+def base_to_base(num_str: str, base_m: int, base_n: int) -> str:
     # Convert to decimal first
     decimal = base_n_to_decimal(num_str, base_m)
 
@@ -139,10 +139,10 @@ if __name__ == '__main__':
     assert decimal_to_base_n('214', 5) == '1324'
     assert decimal_to_base_n('214', 32) == '6M'
 
-    assert BaseToBase('0', 5, 2) == '0'
-    assert BaseToBase('1324', 5, 2) == '11010110'
-    assert BaseToBase('1324', 5, 32) == '6M'
-    assert BaseToBase('1324', 16, 32) == '4P4'
-    assert BaseToBase('1324', 32, 5) == '2122113'
+    assert base_to_base('0', 5, 2) == '0'
+    assert base_to_base('1324', 5, 2) == '11010110'
+    assert base_to_base('1324', 5, 32) == '6M'
+    assert base_to_base('1324', 16, 32) == '4P4'
+    assert base_to_base('1324', 32, 5) == '2122113'
 
     print('All tests passed!')
