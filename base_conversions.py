@@ -1,3 +1,11 @@
+'''
+1. from Base_N to Decimal
+2. from Decimal to Binary
+3. from Decimal to Hex
+4. from Decimal to Base_N
+5. from Base_M to Base_N
+'''
+
 
 from collections import deque
 
